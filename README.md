@@ -1,5 +1,8 @@
 # Lab-5-202001203
 
+Static Analysis Tool Used: Pylint
+Language: Python
+
                                                                     File 1 Name: watermark.py
 
 ![image](https://user-images.githubusercontent.com/75676773/225587792-7a9a7200-f8d1-436c-bb8b-fb57cd11c18c.png)
