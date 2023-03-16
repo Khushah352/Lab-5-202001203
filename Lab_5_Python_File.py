@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-# This file is part of Shuup.
-#
-# Copyright (c) 2012-2021, Shuup Commerce Inc. All rights reserved.
-#
-# This source code is licensed under the OSL-3.0 license found in the
-# LICENSE file in the root directory of this source tree.
 import os
 import re
 import sys
@@ -16,7 +9,6 @@ from rope.refactor.similarfinder import CodeTemplate
 from six import print_
 
 safe_double_quote_re = re.compile(r"^[\w ]+$", re.UNICODE)
-
 
 class LanguageTwist(CodeTemplate):
     def __init__(self, po_file):
@@ -49,7 +41,6 @@ class LanguageTwist(CodeTemplate):
                 print_("Not in catalog: %r" % string, file=sys.stderr)
 
         return repr(string)
-
 
 def main():
     prj = Project(os.path.realpath("../shuup/core/models"))
